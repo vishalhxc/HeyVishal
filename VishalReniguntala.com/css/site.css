@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Roboto+Slab:300|Roboto:400,500');
+body {
+    background-color: #1f1f1f !important;
+    color: #ffffff !important;
+}
+
+.highlighter {
+    background: #F6D365;
+    background: linear-gradient(120deg, #F6A165 0%, #F6D365);
+}
+
+.navbar-vishal {
+    background: #F6D365;
+    background: -webkit-linear-gradient(120deg, #F6A165 0%, #F6D365);
+    background: linear-gradient(120deg, #F6A165 0%, #F6D365);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.navbar-vishal .navbar-brand {
+    font-family: 'Open Sans Condensed', serif;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+.navbar-vishal .links a {
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 26px;
+}
+
+.navbar-vishal .links a:hover {
+    -webkit-text-fill-color: #ffffff;
+}
+
+.navbar-vishal .social-icons a i {
+    font-size: 20px;
+    display: initial;
+}
+
+.navbar-vishal .social-icons .nav-item:hover a i {
+    -webkit-text-fill-color: #ffffff;
+}
+
+h1, h2, h3 {
+    font-family: 'Bubbler One', serif !important;
+}
+
+.vishal-main {
+    width: full-width;
+    height: 100vh;
+    text-align: center;
+    background-image: url("../images/vishal-full.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: top;
+}
+
+.vishal-large-text {
+    font-family: 'Dancing Script', serif;
+    font-size: 110px;
+}
+
+.padded-top {
+    padding-top: 25px;
+}
+
+.vishal-headshot {
+    width: 200px;
+    height: 200px;
+}

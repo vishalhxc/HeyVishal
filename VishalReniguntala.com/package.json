@@ -1,0 +1,25 @@
+{
+  "name": "VishalReniguntala.com",
+  "version": "1.0.0",
+  "description": "Personal website for Vishal Reniguntala, software developer.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Vishal Reniguntala",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.3.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.7",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-contrib-jshint": "^2.0.0",
+    "grunt-contrib-nodeunit": "^2.0.0",
+    "grunt-contrib-uglify": "^4.0.0"
+  }
+}
