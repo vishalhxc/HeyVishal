@@ -1,0 +1,142 @@
+$font-title: 'Open Sans Condensed', serif;
+$font-heading: 'Roboto Slab', sans-serif;
+$font-subheading: 'Roboto' sans-serif;
+$font-body: 'Roboto', sans-serif;
+$color-dark: #1f1f1f;
+$color-light: #ffffff;
+
+%gradient {
+    background: linear-gradient(120deg, #F6A165 0%, #F6D365);
+    color: $color-dark;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Roboto+Slab:300|Roboto:300,400,500');
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: $color-dark !important;
+    color: $color-light !important;
+    font-family: $font-body;
+    font-weight: 300 !important;
+    height: 100%;
+}
+
+main {
+    height: 100%;
+}
+
+h1 { 
+    font-family: $font-title !important;
+    text-transform: uppercase;
+    font-size: 5.5em !important;
+}
+
+h2 { 
+    font-family: $font-heading !important;
+    font-size: 2em !important;
+}
+
+h3 { 
+    font-family: $font-title !important;
+    text-transform: uppercase;
+    font-size: 3.3em !important;
+}
+
+h4 { 
+    font-family: $font-heading !important;
+    font-size: 2em !important;
+}
+
+h5, h6 {
+    font-family: $font-subheading !important;
+    font-weight: 300 !important;
+}
+
+a {
+    color: $color-light;
+}
+
+strong {
+    font-family: $font-subheading !important;
+    font-weight: 500 !important;
+}
+
+.highlighter {
+    @extend %gradient;
+}
+
+.navbar-vishal {
+    @extend %gradient;
+
+    .navbar-brand {
+        font-family: $font-title;
+        text-transform: uppercase;
+        font-size: 3.0em;
+    }
+
+    .navbar-nav {
+        .nav-link {
+            font-family: $font-heading;
+            color: $color-dark;
+            font-size: 1.3em;
+        }
+        
+        .nav-link:hover {
+            color: $color-light;
+        }
+    }
+}
+
+.padded-top {
+    padding-top: 25px;
+}
+
+#greeting {
+    background-image: url("../images/vishal.png");
+    min-height: 100%;
+}
+
+.greeting-content {
+    position: absolute;
+    bottom: 10%;
+    background-color: $color-dark;
+    color: $color-light;
+    mix-blend-mode: hard-light;
+    padding: 25px 25px 25px 25px;
+}
+
+#about {
+    min-height: 500px;
+    background-color: $color-light;
+    color: $color-dark;
+}
+
+#experience {
+    min-height: 100%;
+}
+
+#education {
+    min-height: 100%;
+}
+
+#contact {
+    min-height: 100%;
+}
+
+#greeting, #about, #experience, #education, #contact {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    padding: 50px 0 50px 0;
+}
+
+#about {
+    min-height: 100%;
+}
+
+

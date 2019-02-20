@@ -1,70 +1,99 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Roboto+Slab:300|Roboto:400,500');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Roboto+Slab:300|Roboto:300,400,500");
+.highlighter, .navbar-vishal {
+  background: linear-gradient(120deg, #F6A165 0%, #F6D365);
+  color: #1f1f1f; }
+
+html {
+  height: 100%; }
+
 body {
-    background-color: #1f1f1f !important;
-    color: #ffffff !important;
-}
+  background-color: #1f1f1f !important;
+  color: #ffffff !important;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300 !important;
+  height: 100%; }
 
-.highlighter {
-    background: #F6D365;
-    background: linear-gradient(120deg, #F6A165 0%, #F6D365);
-}
+main {
+  height: 100%; }
 
-.navbar-vishal {
-    background: #F6D365;
-    background: -webkit-linear-gradient(120deg, #F6A165 0%, #F6D365);
-    background: linear-gradient(120deg, #F6A165 0%, #F6D365);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-}
+h1 {
+  font-family: "Open Sans Condensed", serif !important;
+  text-transform: uppercase;
+  font-size: 5.5em !important; }
+
+h2 {
+  font-family: "Roboto Slab", sans-serif !important;
+  font-size: 2em !important; }
+
+h3 {
+  font-family: "Open Sans Condensed", serif !important;
+  text-transform: uppercase;
+  font-size: 3.3em !important; }
+
+h4 {
+  font-family: "Roboto Slab", sans-serif !important;
+  font-size: 2em !important; }
+
+h5, h6 {
+  font-family: "Roboto" sans-serif !important;
+  font-weight: 300 !important; }
+
+a {
+  color: #ffffff; }
+
+strong {
+  font-family: "Roboto" sans-serif !important;
+  font-weight: 500 !important; }
 
 .navbar-vishal .navbar-brand {
-    font-family: 'Open Sans Condensed', serif;
-    text-transform: uppercase;
-    font-size: 50px;
-}
-
-.navbar-vishal .links a {
-    font-family: 'Roboto Slab', sans-serif;
-    font-size: 26px;
-}
-
-.navbar-vishal .links a:hover {
-    -webkit-text-fill-color: #ffffff;
-}
-
-.navbar-vishal .social-icons a i {
-    font-size: 20px;
-    display: initial;
-}
-
-.navbar-vishal .social-icons .nav-item:hover a i {
-    -webkit-text-fill-color: #ffffff;
-}
-
-h1, h2, h3 {
-    font-family: 'Bubbler One', serif !important;
-}
-
-.vishal-main {
-    width: full-width;
-    height: 100vh;
-    text-align: center;
-    background-image: url("../images/vishal-full.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position-y: top;
-}
-
-.vishal-large-text {
-    font-family: 'Dancing Script', serif;
-    font-size: 110px;
-}
+  font-family: "Open Sans Condensed", serif;
+  text-transform: uppercase;
+  font-size: 3.0em; }
+.navbar-vishal .navbar-nav .nav-link {
+  font-family: "Roboto Slab", sans-serif;
+  color: #1f1f1f;
+  font-size: 1.3em; }
+.navbar-vishal .navbar-nav .nav-link:hover {
+  color: #ffffff; }
 
 .padded-top {
-    padding-top: 25px;
-}
+  padding-top: 25px; }
 
-.vishal-headshot {
-    width: 200px;
-    height: 200px;
-}
+#greeting {
+  background-image: url("../images/vishal.png");
+  min-height: 100%; }
+
+.greeting-content {
+  position: absolute;
+  bottom: 10%;
+  background-color: #1f1f1f;
+  color: #ffffff;
+  mix-blend-mode: hard-light;
+  padding: 25px 25px 25px 25px; }
+
+#about {
+  min-height: 500px;
+  background-color: #ffffff;
+  color: #1f1f1f; }
+
+#experience {
+  min-height: 100%; }
+
+#education {
+  min-height: 100%; }
+
+#contact {
+  min-height: 100%; }
+
+#greeting, #about, #experience, #education, #contact {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  padding: 50px 0 50px 0; }
+
+#about {
+  min-height: 100%; }
+
+/*# sourceMappingURL=site.css.map */

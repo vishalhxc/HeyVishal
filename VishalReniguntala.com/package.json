@@ -20,6 +20,11 @@
     "grunt": "^1.0.3",
     "grunt-contrib-jshint": "^2.0.0",
     "grunt-contrib-nodeunit": "^2.0.0",
-    "grunt-contrib-uglify": "^4.0.0"
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^4.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-express-server": "^0.5.4",
+    "grunt-sass": "^3.0.2",
+    "node-sass": "^4.11.0"
   }
 }
