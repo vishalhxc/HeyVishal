@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Roboto+Slab:300|Roboto:300,400,500");
 .highlighter, .navbar-vishal {
-  background: linear-gradient(120deg, #F6A165 0%, #F6D365);
+  background: #FF512F;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #DD2476, #FF512F);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #DD2476, #FF512F);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #1f1f1f; }
 
 html {
@@ -10,11 +15,16 @@ body {
   background-color: #1f1f1f !important;
   color: #ffffff !important;
   font-family: "Roboto", sans-serif;
-  font-weight: 300 !important;
   height: 100%; }
 
 main {
   height: 100%; }
+
+.highlighter {
+  -webkit-text-fill-color: transparent;
+  -webkit-column-rule-color: transparent;
+  -webkit-background-clip: text;
+  padding-bottom: 50px; }
 
 h1 {
   font-family: "Open Sans Condensed", serif !important;
@@ -26,6 +36,7 @@ h2 {
   font-size: 2em !important; }
 
 h3 {
+  text-align: center;
   font-family: "Open Sans Condensed", serif !important;
   text-transform: uppercase;
   font-size: 3.3em !important; }
@@ -38,7 +49,14 @@ h5, h6 {
   font-family: "Roboto" sans-serif !important;
   font-weight: 300 !important; }
 
-a {
+.content-block {
+  padding: 25px 0 50px 0; }
+
+main a {
+  text-decoration: none;
+  color: #ffffff; }
+main a:hover {
+  text-decoration: underline;
   color: #ffffff; }
 
 strong {
@@ -52,48 +70,51 @@ strong {
 .navbar-vishal .navbar-nav .nav-link {
   font-family: "Roboto Slab", sans-serif;
   color: #1f1f1f;
-  font-size: 1.3em; }
+  font-size: 1.3em;
+  transition: all 0.3s ease; }
 .navbar-vishal .navbar-nav .nav-link:hover {
   color: #ffffff; }
 
 .padded-top {
   padding-top: 25px; }
 
+.info-button {
+  font-size: 0.6em;
+  cursor: pointer;
+  margin-left: 5px; }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(40px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
 #greeting {
   background-image: url("../images/vishal.png");
-  min-height: 100%; }
-
-.greeting-content {
-  position: absolute;
-  bottom: 10%;
-  background-color: #1f1f1f;
-  color: #ffffff;
-  mix-blend-mode: hard-light;
-  padding: 25px 25px 25px 25px; }
-
-#about {
-  min-height: 500px;
-  background-color: #ffffff;
-  color: #1f1f1f; }
-
-#experience {
-  min-height: 100%; }
-
-#education {
-  min-height: 100%; }
-
-#contact {
-  min-height: 100%; }
-
-#greeting, #about, #experience, #education, #contact {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  display: block;
-  padding: 50px 0 50px 0; }
+  display: block; }
+  #greeting .greeting-content {
+    position: absolute;
+    bottom: 10%;
+    background-color: #1f1f1f;
+    color: #ffffff;
+    mix-blend-mode: hard-light;
+    padding: 25px 25px 25px 25px;
+    animation: 1s ease-out 0s 1 fadeIn; }
 
-#about {
+#experience, #contact {
+  background-color: #1f1f1f;
+  background-image: radial-gradient(#242424 9px, transparent 10px), repeating-radial-gradient(#242424 0, #242424 4px, transparent 5px, transparent 20px, #242424 21px, #242424 25px, transparent 26px, transparent 50px);
+  background-size: 30px 30px, 90px 90px;
+  background-position: 0 0;
+  background-attachment: fixed; }
+
+#greeting, #about, #experience, #education, #contact {
+  padding: 50px 0 50px 0;
   min-height: 100%; }
 
 /*# sourceMappingURL=site.css.map */
