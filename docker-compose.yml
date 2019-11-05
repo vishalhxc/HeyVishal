@@ -1,0 +1,36 @@
+version: "3"
+services:
+  kafka:
+    image: spotify/kafka
+    ports:
+      - "2181:2181"
+      - "9092:9092"
+    environment:
+      - ADVERTISED_HOST=localhost
+      - ADVERTISED_PORT=9092
+      - GROUP_ID=groupId
+      - TOPICS=Test
+    expose:
+      - "9092"
+      - "2181"
+  postgres:
+    container_name: postgres
+    image: postgres:latest
+    ports:
+      - "5432:5432"
+    volumes:
+      - /var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: pg_user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: db_vishal
+  pgadmin4:
+    container_name: pgAdmin4
+    image: dpage/pgadmin4:latest
+    depends_on:
+      - postgres
+    environment:
+      PGADMIN_DEFAULT_EMAIL: pg@vishal.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    ports:
+      - "5050:80"
